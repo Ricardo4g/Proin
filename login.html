@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Inicio de sesion</title>
+      <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 3%, 21%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fffcfc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+ 
+        a {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 4px;
+            text-align: center;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+      </style>
+   </head>
+   <body>
+    <div class="container">
+        <h1>Inicio de un gai</h1>
+        <form action="login1.php" method="post">
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario" required />
+            <input type="password" name="contra" id="contra" placeholder="Password" required />
+            <input type="submit" value="Iniciar" />
+            <a href="alta3a.html">Registrarse</a>
+        </form>
+        <header> <a href="Index.html"></a></header>
+    </div>
+</body>
+
+
+
+</html>

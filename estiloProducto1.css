@@ -1,0 +1,378 @@
+
+/* Index  */
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(198, 188, 188);
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color:  #A50000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{  
+    display: flex;
+}
+
+.logo img{
+    height: 50px;
+   margin-left: 10px;
+
+}
+
+nav a{
+
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: rgb(9, 9, 9);
+}
+
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+
+        padding: 15px 0px;
+    }
+}  
+
+
+/* Pie de pagina */
+
+footer {
+    background-color: #A50000;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer a:hover{
+    color: #9e9696;
+
+
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-ubicacion {
+    text-align: center;
+}
+
+.footer-ubicacion img {
+    max-width: 80%;
+    height: auto;
+}
+
+.footer-copy {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #8B0000;
+}
+
+
+
+
+
+.container-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.container-title :hover{
+    color:#8B0000; 
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container-img img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container-info-producto {
+    margin-left: 30px;
+    max-width: 600px;
+}
+
+.container-info-producto .form-group {
+    margin: 15px 0;
+}
+
+.container-info-producto label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.container-info-producto select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container-info-producto .btn-clean {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#A50000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-info-producto .btn-clean:hover {
+    background-color:#8B0000;
+}
+
+.container-add-cotizar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-add-cotizar .input-quantity {
+    width: 50px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.container-add-cotizar .btn-increment-decrement i {
+    cursor: pointer;
+    margin: 0 5px;  
+}
+
+.container-add-cotizar .btn-cotizar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#ff0606;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-add-cotizar .btn-cotizar:hover {
+    background-color:#000000;
+}
+
+.container-description,
+.container-additional-information,
+.container-reviews {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-description .title-description,
+.container-additional-information .title-additional-information,
+.container-reviews .title-reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-description .text-description,
+.container-additional-information .text-aditional,
+.container-reviews .text-reviews {
+    display: none;
+}
+
+.container-social {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-social .container-buttons-social a {
+    margin: 0 10px;
+    color: #333;
+}
+
+.container-related-product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.container-related-product h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-list-products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+}
+
+.info-card .text-product {
+    padding: 10px;
+}
+
+footer {
+    background-color:#8B0000 ;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Show/Hide content on click */
+.title-description.active + .text-description,
+.title-additional-information.active + .text-aditional,
+.title-reviews.active + .text-reviews {
+    display: block;
+}
+
+
+/* Pie de pagina */
+
+footer {
+    background-color: #A50000;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer a:hover{
+    color: #9e9696;
+
+
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-ubicacion {
+    text-align: center;
+}
+
+.footer-ubicacion img {
+    max-width: 80%;
+    height: auto;
+}
+
+.footer-copy {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #8B0000;
+}
+
+/* Animación de escala para las imágenes */
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.container-img img,
+.card-img img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el ratón sobre la imagen */
+.container-img img:hover,
+.card-img img:hover {
+    animation: scaleUp 0.3s forwards;
+}
+
+.container-img img {
+    /* Agregar efecto inicial */
+    animation: scaleDown 0.3s forwards;
+}
+
+.card-img img {
+    /* Agregar efecto inicial */
+    animation: scaleDown 0.3s f

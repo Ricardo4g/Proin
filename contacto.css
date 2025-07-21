@@ -1,0 +1,183 @@
+/* Index  */
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url(logo.png);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(198, 188, 188);
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color:  #A50000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{  
+    display: flex;
+}
+
+.logo img{
+    height: 50px;
+   margin-left: 10px;
+
+}
+
+nav a{
+
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: rgb(9, 9, 9);
+}
+
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+
+        padding: 15px 0px;
+    }
+} 
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative; /* Necesario para posicionar la capa de fondo */
+
+    align-items: center;
+    position: relative;
+}
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Ajusta este valor para cambiar la opacidad */
+    z-index: 0; /* Asegura que la capa esté debajo del contenido */
+}
+
+
+
+.container-form {
+    background-color: #ffffff;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative; /* Necesario para posicionar el contenido sobre la capa de fondo */
+    z-index: 5; /* Asegura que el contenido esté encima de la capa de fondo */
+ 
+}
+
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 15px;
+    margin-bottom: 20 px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color:#A50000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#460101;
+}
+
+/* Pie de pagina */
+
+footer {
+    background-color: #A50000;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer a:hover{
+    color: #9e9696;
+
+
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-ubicacion {
+    text-align: center;
+}
+
+.footer-ubicacion img {
+    max-width: 80%;
+    height: auto;
+}
+
+.footer-copy {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #8B0000;
+}
+
+
+
+
